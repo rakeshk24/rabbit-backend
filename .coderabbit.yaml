@@ -8,8 +8,8 @@ reviews:
   review_status: true
   collapse_walkthrough: false
 
-knowledgebase:
-  linked_repos:
+knowledge_base:
+  linked_repositories:
   - repopsitory: "rakeshk24/rabbit-frontend"
     instructions: >
       Flag any field renames or removals — rabbit-frontend/api_client.py references these field names directly (status, priority, title, id).
