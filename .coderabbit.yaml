@@ -10,7 +10,7 @@ reviews:
 
 knowledge_base:
   linked_repositories:
-  - repopsitory: "rakeshk24/rabbit-frontend"
+  - repository: "rakeshk24/rabbit-frontend"
     instructions: >
       Flag any field renames or removals — rabbit-frontend/api_client.py references these field names directly (status, priority, title, id).
       Also flag any endpoint path changes that would break the frontend api_client.
