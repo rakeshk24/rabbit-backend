@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+
+knowledgebase:
+  linked_repos:
+  - repopsitory: "rakeshk24/rabbit-frontend"
+    instructions: >
+      Flag any field renames or removals — rabbit-frontend/api_client.py references these field names directly (status, priority, title, id).
+      Also flag any endpoint path changes that would break the frontend api_client.
+      Check that endpoint paths match what rabbit-frontend/api_client.py expects:
+      GET /tasks, POST /tasks, PATCH /tasks/{id}/complete, PATCH /tasks/{id}/start, DELETE /tasks/{id}
