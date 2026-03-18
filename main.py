@@ -30,7 +30,7 @@ def complete_task(task_id: int):
     """Mark a task as done."""
     if task_id not in _tasks:
         raise HTTPException(status_code=404, detail="Task not found")
-    _tasks[task_id].status = TaskStatus.done
+    _tasks[task_id].state = TaskStatus.done
     return _tasks[task_id]
 
 
@@ -39,7 +39,7 @@ def start_task(task_id: int):
     """Mark a task as in_progress."""
     if task_id not in _tasks:
         raise HTTPException(status_code=404, detail="Task not found")
-    _tasks[task_id].status = TaskStatus.in_progress
+    _tasks[task_id].state = TaskStatus.in_progress
     return _tasks[task_id]
 
 
