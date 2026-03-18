@@ -25,5 +25,5 @@ class Task(BaseModel):
     id: int
     title: str
     description: Optional[str] = None
-    status: TaskStatus = TaskStatus.pending
+    state: TaskStatus = TaskStatus.pending
     priority: TaskPriority = TaskPriority.medium

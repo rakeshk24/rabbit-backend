@@ -1,5 +1,4 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-
 reviews:
   profile: "chill"
   request_changes_workflow: false
@@ -16,3 +15,7 @@ knowledge_base:
       Also flag any endpoint path changes that would break the frontend api_client.
       Check that endpoint paths match what rabbit-frontend/api_client.py expects:
       GET /tasks, POST /tasks, PATCH /tasks/{id}/complete, PATCH /tasks/{id}/start, DELETE /tasks/{id}
+
+issue_enrichment:
+  planning:
+    enabled: false
